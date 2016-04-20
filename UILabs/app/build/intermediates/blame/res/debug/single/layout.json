@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dropdown_item.xml",
+        "source": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\src\\main\\res\\layout\\dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_todo.xml",
+        "source": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\src\\main\\res\\layout\\add_todo.xml"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\build\\intermediates\\res\\merged\\debug\\layout\\todo_item.xml",
+        "source": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\src\\main\\res\\layout\\todo_item.xml"
+    },
+    {
+        "merged": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\build\\intermediates\\res\\merged\\debug\\layout\\footer_view.xml",
+        "source": "D:\\Users\\Administrator\\AndroidStudioProjects\\UILabs\\app\\src\\main\\res\\layout\\footer_view.xml"
+    }
+]

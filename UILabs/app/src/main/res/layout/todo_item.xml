@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/StatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done_string"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@+id/statusCheckBox"
+        android:layout_alignBottom="@+id/statusCheckBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/statusCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/titleView"
+        android:layout_toRightOf="@+id/StatusLabel"
+        android:layout_toEndOf="@+id/StatusLabel">
+    </CheckBox>
+
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignBottom="@+id/statusCheckBox"
+        android:layout_toLeftOf="@+id/priorityView"
+        android:layout_centerHorizontal="true"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/statusCheckBox" />
+
+    <TextView
+        android:id="@+id/priorityView"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/statusCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/StatusLabel" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/DateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_string"
+        android:layout_below="@+id/statusCheckBox"
+        android:layout_alignLeft="@+id/StatusLabel"
+        android:layout_alignStart="@+id/StatusLabel">
+    </TextView>
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DateLabel"
+        android:layout_toRightOf="@+id/DateLabel" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+
+        android:visibility="invisible"
+        android:id="@+id/WarningView"
+        android:layout_toStartOf="@+id/DateLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:alpha="175"
+        android:layout_alignTop="@+id/StatusLabel"
+        android:layout_alignBottom="@+id/DateLabel"
+        android:layout_toLeftOf="@+id/DateLabel" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/DateLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/priorityView"
+        android:layout_alignEnd="@+id/priorityView"/>
+
+
+
+</RelativeLayout>
